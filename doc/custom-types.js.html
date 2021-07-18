@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: objects.js</title>
+    <title>JSDoc: Source: custom-types.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: objects.js</h1>
+    <h1 class="page-title">Source: custom-types.js</h1>
 
     
 
@@ -27,25 +27,33 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Person Object
- * @type {{id: number, name: string, surname: string, age: number}}
+ * Nuevo objeto de usuario
+ * @typedef {Object} User
+ * @property {number} id Id de usuario
+ * @property {string} name Nombre de usuario
+ * @property {number | string} [age] Edad de usuario (Opcional)
+ * @property {boolean} isActive Estado de usuario
  * */
-const person = {
+
+
+/**
+ * @type {User}
+ * */
+const myNewUser = {
     id: 1,
-    name: 'Arian',
-    surname: 'Angoma',
-    age: 21
+    name: "Arian",
+    age: 21,
+    isActive: true
 }
 
 /**
- * Person Object Two
- * @type {{id: number | string, name: string, surname: string, age: number}}
+ * @type {User}
  * */
-const person2 = {
-    id: 1,
-    name: 'Arian',
-    surname: 'Angoma',
-    age: 21
+const myNewUser2 = {
+    id: 2,
+    name: "Andrea",
+    age: 15,
+    isActive: true
 }</code></pre>
         </article>
     </section>
