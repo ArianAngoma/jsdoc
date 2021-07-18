@@ -1,0 +1,14 @@
+{
+  "name": "js-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arian Angoma Vilchez",
+  "license": "ISC",
+  "dependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}
