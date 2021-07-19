@@ -1,8 +1,8 @@
-/**
- * Matemáticas - Aprende más {@tutorial second-tutorial}
- * @module Math
- * */
+## Segundo Tutorial
 
+Este es el segundo tutorial JSDoc
+
+```js
 /**
  * Suma dos números
  * @param {number} x Primer número
@@ -14,3 +14,4 @@ const sum = (x, y) => x + y;
 module.exports = {
     sum
 }
+```

@@ -7,6 +7,7 @@
  * @see https://docs.github.com/en/rest/reference/repos#list-repository-languages
  *
  * @todo Implementar resto de métodos
+ * @tutorial first-tutorial
  * */
 class Programmer {
     /**
