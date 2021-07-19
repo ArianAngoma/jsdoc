@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>api.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,36 +32,52 @@
 
 <div id="main">
     
+    <h1 class="page-title">api.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const express = require('express');
+const app = express();
 
+/**
+ * @module API
+ * */
 
-    <section class="package">
-        <h3> </h3>		
+/**
+ * Ruta principal
+ * @name Index
+ * @path {GET} /
+ * */
+app.get('/', (req, res) => res.send('Hola'));
+
+/**
+ * Ruta para obtener usuarios
+ * @name Users
+ * @path {POST} /users
+ * */
+app.post('/users', (req, res) => res.send('Users'));
+
+/**
+ * Ruta para actualizar productos
+ * @name Products
+ * @path {PUT} /products
+ * */
+app.put('/products', (req, res) => res.send('Products'));
+
+/**
+ * Ruta para eliminar categoria
+ * @name Categories
+ * @path {DELETE} /categories
+ * */
+app.delete('/categories', (req, res) => res.send('Categories'));</code></pre>
+        </article>
     </section>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    <section class="readme usertext">
-        <article><h2>Proyecto JSDoc</h2>
-<p>Este es un proyecto con documentación JSDoc</p></article>
-    </section>
-
-
 
 
 
