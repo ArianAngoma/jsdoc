@@ -27,5 +27,8 @@ class Programmer {
     }
 }
 
+/**
+ * Conoce más en {@link Programmer}
+ * */
 const programmer = new Programmer({name: 'Arian Angoma Vilchez'}, 'javascript');
 programmer.getInfo();
