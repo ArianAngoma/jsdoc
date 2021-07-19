@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Programmer</title>
+    <title>JSDoc: Module: Math</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Programmer</h1>
+    <h1 class="page-title">Module: Math</h1>
 
     
 
@@ -28,9 +28,8 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Programmer<span class="signature">(user, language)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Class para crear un programador</div>
+            
         
     
 </header>
@@ -39,18 +38,122 @@
     <div class="container-overview">
     
         
+            <div class="description">Librería de operaciones matemáticas</div>
+        
 
-    
-    <h2>Constructor</h2>
-    
-
-    
-    <h4 class="name" id="Programmer"><span class="type-signature"></span>new Programmer<span class="signature">(user, language)</span><span class="type-signature"></span></h4>
-    
-
-    
+        
+            
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="functions.js.html">functions.js</a>, <a href="functions.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~sum"><span class="type-signature">(inner) </span>sum<span class="signature">(n1, n2)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Suma dos números
+</div>
 
 
 
@@ -85,13 +188,13 @@
 
         <tr>
             
-                <td class="name"><code>user</code></td>
+                <td class="name"><code>n1</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">number</span>
 
 
             
@@ -101,20 +204,20 @@
 
             
 
-            <td class="description last">Información del usuario</td>
+            <td class="description last">Primer número</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>language</code></td>
+                <td class="name"><code>n2</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">number</span>
 
 
             
@@ -124,7 +227,7 @@
 
             
 
-            <td class="description last">Un lenguaje de programación</td>
+            <td class="description last">Segundo número</td>
         </tr>
 
     
@@ -165,28 +268,14 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="classes.js.html">classes.js</a>, <a href="classes.js.html#line11">line 11</a>
+        <a href="functions.js.html">functions.js</a>, <a href="functions.js.html#line12">line 12</a>
     </li></ul></dd>
     
 
     
 
     
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://docs.github.com/en/rest/reference/repos#list-repository-languages">https://docs.github.com/en/rest/reference/repos#list-repository-languages</a></li>
-        </ul>
-    </dd>
-    
 
-    
-    <dt class="tag-todo">To Do:</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>Implementar resto de métodos</li>
-        </ul>
-    </dd>
     
 </dl>
 
@@ -204,35 +293,32 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Resultado total
+</div>
 
 
 
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
 
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>const newProgrammer = new Programmer({name: 'Arian', 'Go'})newProgrammer.getInfo()</code></pre>
 
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
+    </dd>
+</dl>
 
     
 
-    
 
-    
-        <h3 class="subsection-title">Methods</h3>
+
+
 
         
             
@@ -240,7 +326,7 @@
     
 
     
-    <h4 class="name" id="getInfo"><span class="type-signature"></span>getInfo<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+    <h4 class="name" id="~sumTwo"><span class="type-signature">(inner) </span>sumTwo<span class="signature">(n1, n2)</span><span class="type-signature"> &rarr; {string}</span></h4>
     
 
     
@@ -248,7 +334,7 @@
 
 
 <div class="description">
-    Obtener información de programador
+    Suma dos números
 </div>
 
 
@@ -257,6 +343,78 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Primer número</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>n2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Segundo número</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -292,7 +450,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="classes.js.html">classes.js</a>, <a href="classes.js.html#line25">line 25</a>
+        <a href="functions.js.html">functions.js</a>, <a href="functions.js.html#line22">line 22</a>
     </li></ul></dd>
     
 
@@ -320,6 +478,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    Resultado total
+</div>
+
 
 
 <dl>
@@ -328,7 +490,7 @@
     </dt>
     <dd>
         
-<span class="param-type">void</span>
+<span class="param-type">string</span>
 
 
     </dd>

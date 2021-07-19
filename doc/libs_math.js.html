@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: functions.js</title>
+    <title>JSDoc: Source: libs/math.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: functions.js</h1>
+    <h1 class="page-title">Source: libs/math.js</h1>
 
     
 
@@ -27,27 +27,16 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Librería de operaciones matemáticas
- * @module Math
- * */
-
-/**
  * Suma dos números
- * @param {number} n1 Primer número
- * @param {number} n2 Segundo número
- * @returns {number} Resultado total
+ * @param {number} x Primer número
+ * @param {number} y Segundo número
+ * @returns {number} Suma de x, y
  * */
-const sum = (n1, n2) => {
-    return n1 + n2;
-}
+const sum = (x, y) => x + y;
 
-/**
- * Suma dos números
- * @param {number} n1 Primer número
- * @param {number} n2 Segundo número
- * @returns {string} Resultado total
- * */
-const sumTwo = (n1, n2) => `El resultado es ${n1 + n2}`;</code></pre>
+module.exports = {
+    sum
+}</code></pre>
         </article>
     </section>
 
