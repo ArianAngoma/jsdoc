@@ -1,5 +1,5 @@
 /**
- * Nuevo objeto de usuario
+ * User
  * @typedef {Object} User
  * @property {number} id Id de usuario
  * @property {string} name Nombre de usuario

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: functions.js</title>
+    <title>JSDoc: Source: classes.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: functions.js</h1>
+    <h1 class="page-title">Source: classes.js</h1>
 
     
 
@@ -27,22 +27,36 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Suma dos números
- * @param {number} n1 Primer número
- * @param {number} n2 Segundo número
- * @return {number} Resultado total
+ * Class para crear un programador
+ * @example
+ * const newProgrammer = new Programmer({name: 'Arian', 'Go'})
+ * newProgrammer.getInfo()
+ *
+ * @see https://docs.github.com/en/rest/reference/repos#list-repository-languages
+ *
+ * @todo Implementar resto de métodos
  * */
-const sum = (n1, n2) => {
-    return n1 + n2;
+class Programmer {
+    /**
+     * @param {{name: string}} user Información del usuario
+     * @param {string} language Un lenguaje de programación
+     * */
+    constructor(user, language) {
+        this.name = user.name;
+        this.language = language;
+    }
+
+    /**
+     * Obtener información de programador
+     * @return {void}
+     * */
+    getInfo() {
+        console.log(`Soy ${this.name} y mi lenguaje de programación favorita es ${this.language}`);
+    }
 }
 
-/**
- * Suma dos números
- * @param {number} n1 Primer número
- * @param {number} n2 Segundo número
- * @return {string} Resultado total
- * */
-const sumTwo = (n1, n2) => `El resultado es ${n1 + n2}`;</code></pre>
+const programmer = new Programmer({name: 'Arian Angoma Vilchez'}, 'javascript');
+programmer.getInfo();</code></pre>
         </article>
     </section>
 
