@@ -15,6 +15,7 @@
     "recurse": true,
     "destination": "./doc",
     "template": "node_modules/docdash",
-    "tutorials": "./tutorials"
+    "tutorials": "./tutorials",
+    "readme": "./README.md"
   }
 }
